@@ -1,10 +1,3 @@
-// Scrivere un programma che chieda all’utente:
-// - Il numero di chilometri da percorrere
-// - Età del passeggero
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
-// - il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// - va applicato uno sconto del 20% per i minorenni
-// - va applicato uno sconto del 40% per gli over 65.
 const nameInput = document.getElementById("name");
 const kmInput = document.getElementById("km");
 const ageInput = document.getElementById("age");
@@ -30,24 +23,15 @@ calc_btnInput.addEventListener("click", function() {
         const result18 = fullPrice * 0.8;
         const price18 = result18.toFixed(2);
         console.log(price18);
-        document.getElementById("ticket-finalprice").innerHTML = price18;
-        ticketFullPrice.classList.add("text-decoration-line-through");
-        document.getElementById("ticket-fullprice").innerHTML = fullPrice;
-
-
+        document.getElementById("ticket-finalprice").innerHTML = price18 + "€";
     } else if (age > 65){
         const result65 = fullPrice * 0.6;
         const price65 = result65.toFixed(2);
         console.log(price65);
-        document.getElementById("ticket-finalprice").innerHTML = price65;
-        ticketFullPrice.classList.add("text-decoration-line-through");
-        document.getElementById("ticket-fullprice").innerHTML = fullPrice;
-
-
-
+        document.getElementById("ticket-finalprice").innerHTML = price65 + "€";
     } else {
         const price = fullPrice.toFixed(2);
-        document.getElementById("ticket-finalprice").innerHTML = price;
+        document.getElementById("ticket-finalprice").innerHTML = price + "€";
     
     }
 

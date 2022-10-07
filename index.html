@@ -13,33 +13,46 @@
 <body>
 
     <main>
-        <div class="container">
+        <div class="ms_container">
 
             <h1>Calcolo prezzo del biglietto</h1>
 
             <div class="my_form">
 
-                <label for="name">Nome e cognome</label>
-                <input type="text" name="" id="name">
-
-                <label for="km">Numero di chilometri da percorrere</label>
-                <input type="number"name="" id="km">
-
-                <label for="age">Età</label>
-                <input type="number" name="" id="age">
-
-                <div class="">
-                    <button id="calc_btn">Calcola</button>
+                <div class="input_form">
+                    <label for="name">Nome e cognome</label>
+                    <input class="mr-4" type="text" name="" id="name">
                 </div>
-
+                <div class="input_form">
+                    <label for="km">Chilometri</label>
+                    <input class="mr-4" type="number"name="" id="km">
+                </div>
+                <div class="input_form">
+                    <label for="age">Età</label>
+                    <input class="mr-4" type="number" name="" id="age">
+                </div>
+                <div class="input_form">
+                    <button class="mx-auto" id="calc_btn">Calcola</button>
+                </div>
+               
             </div>
 
             <div class="ticket">
-                <div id="ticket-name"></div>
-                <div id="ticket-km"></div>
-                <div id="ticket-fullprice"></div>
-                <div id="ticket-finalprice"></div>
+                <div>
+                    <h3>Passeggero</h3>
+                    <div id="ticket-name"></div>
+                </div>
+                <div>
+                    <h3>Km</h3>
+                    <div id="ticket-km"></div>
+                </div>
+                <div>
+                    <h3>Prezzo</h3>
+                    <div id="ticket-finalprice"></div>
+                </div>
             </div>
+
+            <div class="ms_spam"></div>
         </div>
     </main>
 
