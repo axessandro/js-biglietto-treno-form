@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto treno</title>
+    <!-- link style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+
+            <h1>Calcolo prezzo del biglietto</h1>
+
+            <div class="my_form">
+
+                <label for="name">Nome e cognome</label>
+                <input type="text" name="" id="name">
+
+                <label for="km">Numero di chilometri da percorrere</label>
+                <input type="number"name="" id="km">
+
+                <label for="age">Età</label>
+                <input type="number" name="" id="age">
+
+                <div class="">
+                    <button id="calc_btn">Calcola</button>
+                </div>
+
+            </div>
+
+            <div class="ticket">
+                <div id="ticket-name"></div>
+                <div id="ticket-km"></div>
+                <div id="ticket-fullprice"></div>
+                <div id="ticket-finalprice"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
